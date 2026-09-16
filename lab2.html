@@ -1,17 +1,32 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Lab 2 - Lists, Table and Form</title>
+
 <style>
-   
+
     input {
-        display:block;
+        display: block;
         margin-bottom: 15px;
-       
     }
+
+    input[type="radio"] {
+        display: inline;
+        margin-bottom: 0;
+    }
+      input[type="checkbox"] {
+        display: inline;
+        margin-bottom: 0;
+    }
+
+
 </style>
 
 </head>
@@ -31,7 +46,6 @@
     </ul>
 
 
-   
     <h2>Steps to Create a Website</h2>
 
     <ol>
@@ -43,19 +57,24 @@
         <li>Upload the website to GitHub</li>
     </ol>
 
+
     <h2>Student Information</h2>
 
     <table border="1">
+
         <thead>
+
             <tr>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Course</th>
                 <th>Hobby</th>
             </tr>
+
         </thead>
 
         <tbody>
+
             <tr>
                 <td>Anish</td>
                 <td>16</td>
@@ -83,32 +102,54 @@
                 <td>Physical Chemistry</td>
                 <td>Gaming</td>
             </tr>
-        </tbody>
-    </table>
 
+        </tbody>
+
+    </table>
 
 
     <h2>Contact Form</h2>
 
     <form>
 
-        <label>Name: </label><input type="text" name="fullname" placeholder="Enter Your Name">
+        <label>Name:</label>
+        <input type="text" name="fullname" placeholder="Enter Your Name">
+
+        Age:
+        <input type="number" name="age" placeholder="Enter Your Age">
+
+        Email:
+        <input type="email" name="email" placeholder="Enter Your Email">
+
+        Contact:
+        <input type="tel" name="contact" placeholder="Enter Your Contact">
+
+        Message:
+        <input type="text" name="message" placeholder="Write Message">
+
+        Gender:
+
+        <input type="radio" name="gender" value="male">
+        <label>Male</label>
+        <input type="radio" name="gender" value="female">
+        <label>Female</label>
+        <input type="radio" name="gender" value="other">
+        <label>Other</label> <br><br>
         
+        
+        Hobby:
+
+        <input type="checkbox" name="hobby" value="Reading">
+        <label>Reading</label>
+        <input type="checkbox" name="hobby" value="Writing">
+        <label>Writing</label>
+        <input type="checkbox" name="gender" value="Playing Cricket">
+        <label>Playing Cricket</label><br><br>
 
 
-        Age: <input type="number" name="age" placeholder="Enter Your Age">
-        
-
-        Email: <input type="email" name="email" placeholder="Enter Your Email">
-        
-
-        Contact: <input type="email" name="email" placeholder="Enter Your Email">
-        
-
-        Message: <input type="text" name="message" placeholder="Write Message">
-        
 
         <input type="submit" value="Submit">
+
 
     </form>
 
