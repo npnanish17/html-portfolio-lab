@@ -26,16 +26,18 @@
             background: linear-gradient(135deg, #172554, #2563eb);
             color: white;
             padding: 40px 8%;
-            text-align: center;
+        
         }
 
         header h1 {
             margin: 0;
             font-size: 40px;
+            text-align: center;
         }
 
         header p {
             font-size: 17px;
+            text-align: center;
         }
 
         /* Main Container */
@@ -102,6 +104,28 @@
         tr:hover {
             background-color: #dbeafe;
         }
+
+
+         
+ 
+        nav {
+            text-align: right;
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+            text-align: right;
+            
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+
 
         /* Form */
         form {
@@ -187,8 +211,21 @@
             margin-top: 30px;
         }
 
-        /* Mobile Responsive */
+       /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 650px) {
+
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
 
             header h1 {
                 font-size: 30px;
@@ -220,15 +257,20 @@
 
 <body>
 
+   
     <!-- Header -->
     <header>
-
+        
         <h1>HTML Lists, Table and Web Form</h1>
-
         <p>
             Lab 2 - HTML Lists, Tables and Forms
         </p>
+    <nav>
+        <a href="portiofolio.html" style="text-align: right;">Home</a>
+    </nav>
+        
 
+      
     </header>
 
 

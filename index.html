@@ -9,7 +9,10 @@
 
     <style>
 
-        /* General Page */
+        /* =========================
+           GENERAL
+        ========================= */
+
         * {
             box-sizing: border-box;
         }
@@ -26,7 +29,42 @@
             line-height: 1.6;
         }
 
-        /* Header */
+
+        /* =========================
+           NAVIGATION BAR
+        ========================= */
+
+        nav {
+            background-color: #172554;
+            padding: 15px 8%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #60a5fa;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
         header {
             background: linear-gradient(135deg, #172554, #2563eb);
             color: white;
@@ -51,25 +89,35 @@
 
         header mark {
             background-color: #facc15;
-            color: #111;
+            color: black;
             padding: 3px 7px;
             border-radius: 4px;
         }
 
-        /* Main */
+
+        /* =========================
+           MAIN
+        ========================= */
+
         main {
             width: 90%;
             max-width: 1100px;
             margin: 30px auto;
         }
 
-        /* Sections */
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
         section {
             background-color: white;
             margin-bottom: 30px;
             padding: 30px;
             border-radius: 15px;
-            box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+
+            box-shadow:
+                0 5px 18px rgba(0, 0, 0, 0.08);
         }
 
         section h2 {
@@ -79,32 +127,42 @@
             margin-top: 0;
         }
 
-        section h3 {
-            color: #374151;
-        }
 
-        /* Blockquote */
+        /* =========================
+           BLOCKQUOTE
+        ========================= */
+
         blockquote {
             background-color: #eff6ff;
             border-left: 5px solid #2563eb;
             padding: 15px 20px;
-            margin: 20px 0;
             font-style: italic;
-            color: #374151;
         }
 
-        /* Image */
-        section img {
+
+        /* =========================
+           PROFILE IMAGE
+        ========================= */
+
+        .profile-image {
             display: block;
+
             width: 300px;
             height: 300px;
+
             object-fit: cover;
+
             border-radius: 50%;
             border: 6px solid #2563eb;
+
             margin: 20px auto;
         }
 
-        /* Lists */
+
+        /* =========================
+           LISTS
+        ========================= */
+
         ul,
         ol {
             padding-left: 30px;
@@ -119,60 +177,88 @@
             font-weight: bold;
         }
 
-        /* Audio and Video */
+
+        /* =========================
+           AUDIO
+        ========================= */
+
         audio {
             width: 100%;
             max-width: 500px;
         }
 
+
+        /* =========================
+           VIDEO
+        ========================= */
+
         video {
             display: block;
             max-width: 100%;
             border-radius: 12px;
-            margin-top: 15px;
         }
 
-        /* PDF Object */
+
+        /* =========================
+           OBJECT
+        ========================= */
+
         object {
             display: block;
+
             width: 100%;
             max-width: 700px;
             height: 450px;
+
             border: 2px solid #d1d5db;
             border-radius: 10px;
-            margin-top: 15px;
         }
 
-        /* Embed */
+
+        /* =========================
+           EMBED
+        ========================= */
+
         embed {
             display: block;
+
             border: 3px solid #2563eb;
             border-radius: 10px;
+
             margin-top: 15px;
         }
 
-        /* Iframe */
+
+        /* =========================
+           IFRAME
+        ========================= */
+
         iframe {
             width: 100%;
             max-width: 800px;
             height: 450px;
+
             border: 3px solid #2563eb;
             border-radius: 12px;
-            margin-top: 15px;
         }
 
-        /* Table */
+
+        /* =========================
+           TABLE
+        ========================= */
+
         table {
             width: 100%;
             border-collapse: collapse;
             margin-top: 15px;
-            overflow: hidden;
         }
 
         th {
             background-color: #2563eb;
             color: white;
-            padding: 14px;
+
+            padding: 12px;
+            border: 1px solid #1e40af;
         }
 
         td {
@@ -188,85 +274,138 @@
             background-color: #dbeafe;
         }
 
-        /* Form */
+
+        /* =========================
+           FORM
+        ========================= */
+
         form {
             max-width: 700px;
         }
 
         label {
-            font-weight: bold;
             display: inline-block;
-            margin-top: 12px;
+
+            font-weight: bold;
+
+            margin-top: 10px;
             margin-bottom: 5px;
         }
 
         input[type="text"],
         input[type="email"],
-        textarea {
+        input[type="number"],
+        input[type="tel"] {
+
+            display: block;
+
             width: 100%;
+
             padding: 12px;
+
             border: 2px solid #d1d5db;
+
             border-radius: 8px;
+
             font-size: 15px;
-            outline: none;
+
+            margin-bottom: 10px;
         }
 
         input[type="text"]:focus,
         input[type="email"]:focus,
-        textarea:focus {
+        input[type="number"]:focus,
+        input[type="tel"]:focus {
+
+            outline: none;
+
             border-color: #2563eb;
         }
 
+
+        /* Radio and Checkbox */
+
         input[type="radio"],
         input[type="checkbox"] {
-            margin: 8px 5px 8px 12px;
+
+            margin: 8px 5px 8px 15px;
         }
+
+
+        /* Buttons */
 
         input[type="submit"],
         input[type="reset"] {
-            padding: 12px 25px;
+
+            padding: 12px 30px;
+
             border: none;
+
             border-radius: 8px;
+
+            font-size: 16px;
+
             cursor: pointer;
-            font-size: 15px;
-            margin: 10px 8px 0 0;
+
+            margin-top: 20px;
         }
 
         input[type="submit"] {
-            background-color: #2563eb;
-            color: white;
-        }
 
-        input[type="reset"] {
-            background-color: #6b7280;
+            background-color: #2563eb;
+
             color: white;
         }
 
         input[type="submit"]:hover {
+
             background-color: #1d4ed8;
         }
 
+        input[type="reset"] {
+
+            background-color: #6b7280;
+
+            color: white;
+        }
+
         input[type="reset"]:hover {
+
             background-color: #4b5563;
         }
 
-        /* Footer */
+
+        /* =========================
+           FOOTER
+        ========================= */
+
         footer {
+
             background-color: #172554;
+
             color: white;
-            padding: 25px 10%;
+
             text-align: center;
+
+            padding: 25px;
+
+            margin-top: 30px;
         }
 
-        footer p {
-            margin: 0;
-        }
 
-        /* Mobile Responsive */
+        /* =========================
+           MOBILE
+        ========================= */
+
         @media (max-width: 700px) {
 
-            header {
-                padding: 35px 5%;
+            nav {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            nav a {
+                margin: 0 8px;
             }
 
             header h1 {
@@ -281,18 +420,18 @@
                 padding: 20px;
             }
 
-            section img {
+            .profile-image {
                 width: 220px;
                 height: 220px;
             }
 
-            object,
-            iframe {
-                height: 300px;
-            }
-
             table {
                 font-size: 13px;
+            }
+
+            th,
+            td {
+                padding: 8px;
             }
 
         }
@@ -304,14 +443,40 @@
 
 <body>
 
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Anish's Portfolio
+        </div>
+
+        <div>
+
+
+            <a href="form.html">
+                Form
+            </a>
+
+        </div>
+
+    </nav>
+
+
     <!-- Header -->
+
     <header>
 
-        <h1>My Portfolio</h1>
+        <h1>
+            My Portfolio
+        </h1>
 
         <hr>
 
-        <h2>Introduction</h2>
+        <h2>
+            Introduction
+        </h2>
 
         <p>
             <strong>My name is Anish Neupane.</strong>
@@ -321,9 +486,15 @@
         </p>
 
         <p>
-            <i>I am interested in Mathematics, programming and technology.</i>
+            <i>
+                I am interested in Mathematics,
+                programming and technology.
+            </i>
+
             I currently live in
-            <ins>Buddhanagar-10, Kathmandu</ins>.
+            <ins>
+                Buddhanagar-10, Kathmandu
+            </ins>.
         </p>
 
         <p>
@@ -339,30 +510,44 @@
 
         <p>
             My favourite formula is:
-            p<sub>2</sub><sup>2</sup> =
-            h<sup>2</sup> - b<sup>2</sup>
+
+            p<sub>2</sub><sup>2</sup>
+            =
+            h<sup>2</sup>
+            -
+            b<sup>2</sup>
         </p>
 
         <p>
-            <small>This portfolio demonstrates different HTML tags.</small>
+            <small>
+                This portfolio demonstrates
+                different HTML tags.
+            </small>
         </p>
 
     </header>
 
 
-    <!-- Main Content -->
+    <!-- Main -->
+
     <main>
 
+
         <!-- Education -->
+
         <section>
 
-            <h2>Education</h2>
+            <h2>
+                Education
+            </h2>
 
             <p>
-                I studied at Siddhartha Shishu Sadan School until Grade 8.
-                Then, I continued my studies at Sunwal United English
-                Boarding School. I passed Grade 10 from Sunwal United with
-                <mark>4.0 GPA</mark>.
+                I studied at Siddhartha Shishu
+                Sadan School until Grade 8.
+                Then, I continued my studies at
+                Sunwal United English Boarding School.
+                I passed Grade 10 from Sunwal United
+                with <mark>4.0 GPA</mark>.
             </p>
 
             <blockquote>
@@ -373,9 +558,12 @@
 
 
         <!-- Heading Levels -->
+
         <section>
 
-            <h2>HTML Heading Levels</h2>
+            <h2>
+                HTML Heading Levels
+            </h2>
 
             <h1>Heading 1</h1>
             <h2>Heading 2</h2>
@@ -388,60 +576,91 @@
 
 
         <!-- Image -->
+
         <section>
 
-            <h2>My Image</h2>
+            <h2>
+                My Image
+            </h2>
 
-            <img src="profile.jpg"
-                 alt="My Profile Image"
-                 width="300"
-                 height="300">
+            <img
+                src="profile.jpg"
+                alt="My Profile Image"
+                class="profile-image"
+            >
 
         </section>
 
 
-        <!-- Skills and Hobbies -->
+        <!-- Skills -->
+
         <section>
 
-            <h2>Skills and Hobbies</h2>
+            <h2>
+                Skills and Hobbies
+            </h2>
 
             <p>
-                I like playing cricket, listening to music and playing
+                I like playing cricket,
+                listening to music and playing
                 mind games such as chess.
             </p>
 
-            <h3>My Skills</h3>
+            <h3>
+                My Skills
+            </h3>
 
             <ul>
+
                 <li>HTML</li>
+
                 <li>CSS</li>
+
                 <li>JavaScript</li>
+
                 <li>Git and GitHub</li>
+
                 <li>Problem Solving</li>
+
             </ul>
 
-            <h3>My Hobbies</h3>
+
+            <h3>
+                My Hobbies
+            </h3>
 
             <ol>
+
                 <li>Playing Cricket</li>
+
                 <li>Playing Chess</li>
+
                 <li>Listening to Music</li>
+
                 <li>Learning Programming</li>
+
             </ol>
 
         </section>
 
 
         <!-- Audio -->
+
         <section>
 
-            <h2>My Favourite Audio</h2>
+            <h2>
+                My Favourite Audio
+            </h2>
 
             <audio controls>
 
-                <source src="audio.mp3" type="audio/mpeg">
+                <source
+                    src="audio.mp3"
+                    type="audio/mpeg"
+                >
 
-                Your browser does not support the audio element.
+                Your browser does not support
+                the audio element.
 
             </audio>
 
@@ -449,98 +668,157 @@
 
 
         <!-- Video -->
+
         <section>
 
-            <h2>My Video</h2>
+            <h2>
+                My Video
+            </h2>
 
-            <video controls poster="poster.jpg" width="500">
+            <video
+                controls
+                poster="poster.jpg"
+                width="500"
+            >
 
-                <source src="video.mp4" type="video/mp4">
+                <source
+                    src="video.mp4"
+                    type="video/mp4"
+                >
 
-                Your browser does not support the video element.
+                Your browser does not support
+                the video element.
 
             </video>
 
         </section>
 
 
-        <!-- Object -->
-        <section>
-
-            <h2>My PDF Document</h2>
-
-            <object
-                data="portfolio.pdf"
-                type="application/pdf">
-
-                Your browser does not support PDF viewing.
-
-                <a href="portfolio.pdf">
-                    Open the PDF
-                </a>
-
-            </object>
 
         </section>
 
 
         <!-- Embed -->
+
         <section>
 
-            <h2>Embedded Content</h2>
+            <h2>
+                Embedded Content
+            </h2>
 
             <embed
                 src="profile.jpg"
                 type="image/jpeg"
                 width="300"
-                height="300">
+                height="300"
+            >
 
         </section>
 
 
         <!-- Iframe -->
+
         <section>
 
-            <h2>Embedded Web Content</h2>
+            <h2>
+                Embedded Web Content
+            </h2>
 
             <iframe
                 src="https://www.wikipedia.org/"
-                title="Wikipedia">
+                title="Wikipedia"
+            >
             </iframe>
 
         </section>
 
 
         <!-- Education Table -->
+
         <section>
 
-            <h2>Education Details</h2>
+            <h2>
+                Education Details
+            </h2>
 
             <table>
 
-                <tr>
-                    <th>Level</th>
-                    <th>School</th>
-                    <th>Result</th>
-                </tr>
+                <thead>
 
-                <tr>
-                    <td>Grade 8</td>
-                    <td>Siddhartha Shishu Sadan School</td>
-                    <td>Passed</td>
-                </tr>
+                    <tr>
 
-                <tr>
-                    <td>Grade 10</td>
-                    <td>Sunwal United English Boarding School</td>
-                    <td>4.0 GPA</td>
-                </tr>
+                        <th>
+                            Level
+                        </th>
 
-                <tr>
-                    <td>Grade 11</td>
-                    <td>St. Xavier's College</td>
-                    <td>Currently Studying</td>
-                </tr>
+                        <th>
+                            School
+                        </th>
+
+                        <th>
+                            Result
+                        </th>
+
+                    </tr>
+
+                </thead>
+
+
+                <tbody>
+
+                    <tr>
+
+                        <td>
+                            Grade 8
+                        </td>
+
+                        <td>
+                            Siddhartha Shishu
+                            Sadan School
+                        </td>
+
+                        <td>
+                            Passed
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Grade 10
+                        </td>
+
+                        <td>
+                            Sunwal United
+                            English Boarding School
+                        </td>
+
+                        <td>
+                            4.0 GPA
+                        </td>
+
+                    </tr>
+
+
+                    <tr>
+
+                        <td>
+                            Grade 11
+                        </td>
+
+                        <td>
+                            St. Xavier's College
+                        </td>
+
+                        <td>
+                            Currently Studying
+                        </td>
+
+                    </tr>
+
+                </tbody>
 
             </table>
 
@@ -548,105 +826,157 @@
 
 
         <!-- Contact Form -->
+
         <section>
 
-            <h2>Contact Me</h2>
+            <h2>
+                Contact Me
+            </h2>
 
             <form>
 
-                <label for="name">Name:</label>
+                <label for="name">
+                    Name:
+                </label>
+
                 <input
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Enter your name">
+                    placeholder="Enter your name"
+                >
 
 
-                <label for="email">Email:</label>
+                <label for="email">
+                    Email:
+                </label>
+
                 <input
                     type="email"
                     id="email"
                     name="email"
-                    placeholder="Enter your email">
+                    placeholder="Enter your email"
+                >
 
 
-                <label>Gender:</label>
+                <label>
+                    Gender:
+                </label>
+
+                <br>
 
                 <input
                     type="radio"
                     id="male"
                     name="gender"
-                    value="male">
+                    value="male"
+                >
 
-                <label for="male">Male</label>
+                <label for="male">
+                    Male
+                </label>
+
 
                 <input
                     type="radio"
                     id="female"
                     name="gender"
-                    value="female">
+                    value="female"
+                >
 
-                <label for="female">Female</label>
+                <label for="female">
+                    Female
+                </label>
 
+
+                <br><br>
+
+
+                <label>
+                    Hobbies:
+                </label>
 
                 <br>
-
-
-                <label>Hobbies:</label>
 
                 <input
                     type="checkbox"
                     id="cricket"
                     name="hobby"
-                    value="cricket">
+                    value="cricket"
+                >
 
-                <label for="cricket">Cricket</label>
+                <label for="cricket">
+                    Cricket
+                </label>
+
 
                 <input
                     type="checkbox"
                     id="chess"
                     name="hobby"
-                    value="chess">
+                    value="chess"
+                >
 
-                <label for="chess">Chess</label>
+                <label for="chess">
+                    Chess
+                </label>
+
 
                 <input
                     type="checkbox"
                     id="music"
                     name="hobby"
-                    value="music">
+                    value="music"
+                >
 
-                <label for="music">Music</label>
+                <label for="music">
+                    Music
+                </label>
 
 
-                <label for="message">Message:</label>
+                <br><br>
 
-                <textarea
+
+                <label for="message">
+                    Message:
+                </label>
+
+                <input
+                    type="text"
                     id="message"
                     name="message"
-                    rows="5"
-                    placeholder="Write your message here..."></textarea>
+                    placeholder="Write your message"
+                >
 
 
-                <input type="submit" value="Submit">
+                <input
+                    type="submit"
+                    value="Submit"
+                >
 
-                <input type="reset" value="Reset">
+                <input
+                    type="reset"
+                    value="Reset"
+                >
 
             </form>
 
         </section>
 
+
     </main>
 
 
     <!-- Footer -->
+
     <footer>
 
         <p>
-            <small>© 2026 Anish Neupane | My Portfolio</small>
+            © 2026 Anish Neupane | My Portfolio
         </p>
 
     </footer>
+
 
 </body>
 
